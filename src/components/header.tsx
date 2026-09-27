@@ -92,9 +92,13 @@ export const Header = ({
       <nav class={`mx-auto flex max-w-4xl justify-between rounded-sm bg-neutral-900 p-4`}>
         <ul>
           <li>
-            <strong>
-              <a href={`${webroot}/`}>ConvertX</a>
-            </strong>
+            <a class="inline-flex items-center rounded-sm" href={`${webroot}/`} aria-label="ConvertX home">
+              <img
+                class="h-8 w-auto max-w-56 object-contain"
+                src={`${webroot}/kpc-wordmark-gold.png`}
+                alt="Krähenbühl & Partners ConvertX"
+              />
+            </a>
           </li>
         </ul>
         {rightNav}

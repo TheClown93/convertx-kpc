@@ -30,3 +30,15 @@
 @utility btn-secondary {
   @apply bg-neutral-400 text-contrast rounded-sm p-2 sm:p-4 hover:bg-neutral-300 cursor-pointer transition-colors;
 }
+
+@layer base {
+  ::selection {
+    background-color: var(--accent-500);
+    color: var(--contrast);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent-500);
+    outline-offset: 3px;
+  }
+}
