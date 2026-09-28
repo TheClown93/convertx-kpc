@@ -14,14 +14,11 @@ export const Header = ({
   let rightNav: JSX.Element;
   if (loggedIn) {
     rightNav = (
-      <ul class="flex gap-4">
+      <ul class="flex items-center gap-4">
         {!hideHistory && (
           <li>
             <a
-              class={`
-                text-accent-600 transition-all
-                hover:text-accent-500 hover:underline
-              `}
+              class="kpc-nav-link transition-colors hover:underline"
               href={`${webroot}/history`}
             >
               History
@@ -31,10 +28,7 @@ export const Header = ({
         {!allowUnauthenticated ? (
           <li>
             <a
-              class={`
-                text-accent-600 transition-all
-                hover:text-accent-500 hover:underline
-              `}
+              class="kpc-nav-link transition-colors hover:underline"
               href={`${webroot}/account`}
             >
               Account
@@ -44,10 +38,7 @@ export const Header = ({
         {!allowUnauthenticated ? (
           <li>
             <a
-              class={`
-                text-accent-600 transition-all
-                hover:text-accent-500 hover:underline
-              `}
+              class="kpc-nav-link transition-colors hover:underline"
               href={`${webroot}/logoff`}
             >
               Logout
@@ -58,13 +49,10 @@ export const Header = ({
     );
   } else {
     rightNav = (
-      <ul class="flex gap-4">
+      <ul class="flex items-center gap-4">
         <li>
           <a
-            class={`
-              text-accent-600 transition-all
-              hover:text-accent-500 hover:underline
-            `}
+            class="kpc-nav-link transition-colors hover:underline"
             href={`${webroot}/login`}
           >
             Login
@@ -73,10 +61,7 @@ export const Header = ({
         {accountRegistration ? (
           <li>
             <a
-              class={`
-                text-accent-600 transition-all
-                hover:text-accent-500 hover:underline
-              `}
+              class="kpc-nav-link transition-colors hover:underline"
               href={`${webroot}/register`}
             >
               Register
@@ -88,15 +73,15 @@ export const Header = ({
   }
 
   return (
-    <header class="w-full p-4">
-      <nav class={`mx-auto flex max-w-4xl justify-between rounded-sm bg-neutral-900 p-4`}>
+    <header class="w-full px-4 py-3 sm:py-4">
+      <nav class={`kpc-brand-nav mx-auto flex max-w-4xl items-center justify-between gap-4 rounded-sm px-4 py-3 sm:px-5`}>
         <ul>
           <li>
-            <a class="inline-flex items-center rounded-sm" href={`${webroot}/`} aria-label="ConvertX home">
+            <a class="inline-flex items-center" href={`${webroot}/`} aria-label="ConvertX home">
               <img
-                class="h-8 w-auto max-w-56 object-contain"
-                src={`${webroot}/kpc-wordmark-gold.png`}
-                alt="Krähenbühl & Partners ConvertX"
+                class="kpc-wordmark"
+                src={`${webroot}/kpc-consortium-wordmark.png`}
+                alt="KPC Consortium ConvertX"
               />
             </a>
           </li>

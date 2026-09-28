@@ -3,7 +3,7 @@
 
 @plugin "tailwind-scrollbar";
 
-@theme {
+@theme inline {
   --color-contrast: var(--contrast);
   --color-neutral-900: var(--neutral-900);
   --color-neutral-800: var(--neutral-800);
@@ -31,7 +31,27 @@
   @apply bg-neutral-400 text-contrast rounded-sm p-2 sm:p-4 hover:bg-neutral-300 cursor-pointer transition-colors;
 }
 
+
+@layer components {
+  .kpc-brand-nav { background-color: var(--neutral-950); border: 1px solid #6f5210; box-shadow: 0 12px 30px rgb(0 0 0 / 0.28); }
+  .kpc-nav-link { color: var(--accent-500); }
+  .kpc-nav-link:hover { color: var(--accent-400); }
+  .kpc-wordmark {
+  display: block;
+  height: clamp(38px, 4.5vw, 48px);
+  width: auto;
+  max-width: min(300px, 58vw);
+  object-fit: contain;
+}
+@media (max-width: 480px) {
+  .kpc-brand-nav { gap: 0.65rem; padding-inline: 0.75rem; }
+  .kpc-wordmark { height: 32px; max-width: 62vw; }
+}
+}
+
 @layer base {
+  html { background-color: var(--neutral-950); color-scheme: dark; }
+  body { background-color: var(--neutral-900); color: var(--neutral-200); }
   ::selection {
     background-color: var(--accent-500);
     color: var(--contrast);

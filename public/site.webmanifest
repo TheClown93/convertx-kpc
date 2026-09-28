@@ -1,19 +1,13 @@
 {
-  "name": "ConvertX | Self Hosted File Converter",
-  "short_name": "ConvertX",
+  "name": "KPC ConvertX",
+  "short_name": "KPC ConvertX",
   "icons": [
-    {
-      "src": "/android-chrome-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/android-chrome-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
+    { "src": "/android-chrome-192x192.png?v=kpc-visual-2", "sizes": "192x192", "type": "image/png" },
+    { "src": "/android-chrome-512x512.png?v=kpc-visual-2", "sizes": "512x512", "type": "image/png" }
   ],
-  "theme_color": "#a5d601",
-  "background_color": "#13171f",
-  "display": "standalone"
+  "theme_color": "#080808",
+  "background_color": "#080808",
+  "display": "standalone",
+  "start_url": "./",
+  "scope": "./"
 }
