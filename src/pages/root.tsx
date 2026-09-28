@@ -121,7 +121,7 @@ export const root = new Elysia().use(userService).get(
             `}
           >
             <article class="article">
-              <h1 class="mb-4 text-xl">Convert</h1>
+              <h1 class="mb-4 text-xl kpc-page-title">ELEKTRISCHER DATEIEN-UMFORMER</h1>
               <div class="mb-4 scrollbar-thin max-h-[50vh] overflow-y-auto">
                 <table
                   id="file-list"
@@ -163,7 +163,7 @@ export const root = new Elysia().use(userService).get(
                 <input
                   type="search"
                   name="convert_to_search"
-                  placeholder="Search for conversions"
+                  placeholder="Datei-Formate durchsuchen"
                   autocomplete="off"
                   class="w-full rounded-sm bg-neutral-800 p-4"
                 />
@@ -231,7 +231,7 @@ export const root = new Elysia().use(userService).get(
                   disabled:cursor-not-allowed disabled:opacity-50
                 `}
                 type="submit"
-                value="Convert"
+                value="Konvertieren"
                 disabled
               />
             </form>

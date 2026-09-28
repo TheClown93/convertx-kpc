@@ -23,19 +23,9 @@ export const BaseHtml = ({
     </head>
     <body class={`flex min-h-screen w-full flex-col bg-neutral-900 text-neutral-200`}>
       {children}
-      <footer class="w-full">
-        <div class="p-4 text-center text-sm text-neutral-500">
-          <span>Powered by </span>
-          <a
-            href="https://github.com/C4illin/ConvertX"
-            class={`
-              text-neutral-400
-              hover:text-accent-500
-            `}
-          >
-            ConvertX{" "}
-          </a>
-          <span safe>v{version || ""}</span>
+      <footer class="kpc-footer w-full">
+        <div class="px-4 py-7 text-center text-xs tracking-[0.08em] text-[#bfa66a] sm:text-sm">
+          Institut für Formatangelegenheiten, eine Einrichtung des Krähenbühl & Partners Consortium
         </div>
       </footer>
     </body>

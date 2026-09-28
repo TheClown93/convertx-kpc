@@ -81,7 +81,8 @@ export const user = new Elysia()
           <h1 class="my-8 text-3xl">Welcome to ConvertX!</h1>
           <article class="article p-0">
             <header class="w-full bg-neutral-800 p-4">Create your account</header>
-            <form method="post" action={`${WEBROOT}/register`} class="p-4">
+            <form method="post" action={`${WEBROOT}/register`} class="p-4 kpc-login-form">
+        <h1 class="kpc-login-heading">ANMELDESTELLE</h1>
               <fieldset class="mb-4 flex flex-col gap-4">
                 <label class="flex flex-col gap-1">
                   Email

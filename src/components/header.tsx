@@ -20,9 +20,7 @@ export const Header = ({
             <a
               class="kpc-nav-link transition-colors hover:underline"
               href={`${webroot}/history`}
-            >
-              History
-            </a>
+            >Verlauf</a>
           </li>
         )}
         {!allowUnauthenticated ? (
@@ -30,9 +28,7 @@ export const Header = ({
             <a
               class="kpc-nav-link transition-colors hover:underline"
               href={`${webroot}/account`}
-            >
-              Account
-            </a>
+            >Konto</a>
           </li>
         ) : null}
         {!allowUnauthenticated ? (
@@ -40,9 +36,7 @@ export const Header = ({
             <a
               class="kpc-nav-link transition-colors hover:underline"
               href={`${webroot}/logoff`}
-            >
-              Logout
-            </a>
+            >Abmelden</a>
           </li>
         ) : null}
       </ul>
