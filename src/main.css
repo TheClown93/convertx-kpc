@@ -207,3 +207,36 @@ main button[type="submit"] {
   .kpc-nav-list { gap: .6rem 1rem; font-size: .68rem; }
   .kpc-login-stage, .kpc-converter-panel { padding-inline: .25rem !important; }
 }
+
+/* KPC_SETUP_STATIC_SHELL_V1 */
+.kpc-setup-masthead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(100%, 48rem);
+  margin: 0 auto 1.5rem;
+  padding: 0.75rem 1rem;
+  border-top: 1px solid rgba(201, 162, 39, 0.58);
+  border-bottom: 1px solid rgba(201, 162, 39, 0.58);
+  background: transparent;
+}
+.kpc-setup-wordmark {
+  display: block;
+  width: min(100%, 40rem);
+  height: auto;
+  max-height: 8rem;
+  object-fit: contain;
+}
+[data-kpc-setup-title="true"] {
+  margin: 0 auto 0.75rem;
+  color: #d6af45;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+@media (max-width: 40rem) {
+  .kpc-setup-masthead { margin-bottom: 1rem; padding: 0.5rem 0.75rem; }
+  .kpc-setup-wordmark { max-height: 5.5rem; }
+  [data-kpc-setup-title="true"] { font-size: 0.95rem; letter-spacing: 0.08em; }
+}

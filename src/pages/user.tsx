@@ -78,9 +78,12 @@ export const user = new Elysia()
             sm:px-4
           `}
         >
-          <h1 class="my-8 text-3xl">Welcome to ConvertX!</h1>
+          <div className="kpc-setup-masthead" aria-label="Institut für Formatangelegenheiten">
+  <img className="kpc-setup-wordmark" src="/kpc-consortium-wordmark.png" alt="Institut für Formatangelegenheiten" />
+</div>
+<h1 class="my-8 text-3xl" data-kpc-setup-title="true">Willkommen bei der Anmeldestelle</h1>
           <article class="article p-0">
-            <header class="w-full bg-neutral-800 p-4">Create your account</header>
+            <header class="w-full bg-neutral-800 p-4">Konto einrichten</header>
             <form method="post" action={`${WEBROOT}/register`} class="p-4 kpc-login-form">
         <h1 class="kpc-login-heading">ANMELDESTELLE</h1>
               <fieldset class="mb-4 flex flex-col gap-4">
@@ -107,7 +110,7 @@ export const user = new Elysia()
                   />
                 </label>
               </fieldset>
-              <input type="submit" value="Create account" class="btn-primary" />
+              <input type="submit" value="Konto erstellen" class="btn-primary" />
             </form>
             <footer class="p-4">
               Report any issues on{" "}
