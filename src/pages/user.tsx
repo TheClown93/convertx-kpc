@@ -269,27 +269,28 @@ export const user = new Elysia()
                 sm:px-4
               `}
             >
-              <article class="article">
-                <form method="post" class="flex flex-col gap-4">
+              <article class="article kpc-login-stage">
+                <h1 class="kpc-login-heading">ANMELDESTELLE</h1>
+                <form method="post" class="kpc-login-form flex flex-col gap-4">
                   <fieldset class="mb-4 flex flex-col gap-4">
                     <label class="flex flex-col gap-1">
-                      Email
+                      E-Mail-Adresse
                       <input
                         type="email"
                         name="email"
                         class="rounded-sm bg-neutral-800 p-3"
-                        placeholder="Email"
+                        placeholder="E-Mail-Adresse"
                         autocomplete="email"
                         required
                       />
                     </label>
                     <label class="flex flex-col gap-1">
-                      Password
+                      Passwort
                       <input
                         type="password"
                         name="password"
                         class="rounded-sm bg-neutral-800 p-3"
-                        placeholder="Password"
+                        placeholder="Passwort"
                         autocomplete="current-password"
                         required
                       />
@@ -305,7 +306,7 @@ export const user = new Elysia()
                         Register
                       </a>
                     ) : null}
-                    <input type="submit" value="Login" class="w-full btn-primary" />
+                    <input type="submit" value="Anmelden" class="w-full btn-primary" />
                   </div>
                 </form>
               </article>

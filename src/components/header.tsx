@@ -14,7 +14,7 @@ export const Header = ({
   let rightNav: JSX.Element;
   if (loggedIn) {
     rightNav = (
-      <ul class="flex items-center gap-4">
+      <ul class="kpc-nav-list flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
         {!hideHistory && (
           <li>
             <a
@@ -43,13 +43,13 @@ export const Header = ({
     );
   } else {
     rightNav = (
-      <ul class="flex items-center gap-4">
+      <ul class="kpc-nav-list flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
         <li>
           <a
             class="kpc-nav-link transition-colors hover:underline"
             href={`${webroot}/login`}
           >
-            Login
+            Anmelden
           </a>
         </li>
         {accountRegistration ? (
@@ -67,9 +67,9 @@ export const Header = ({
   }
 
   return (
-    <header class="w-full px-4 py-3 sm:py-4">
-      <nav class={`kpc-brand-nav mx-auto flex max-w-4xl items-center justify-between gap-4 rounded-sm px-4 py-3 sm:px-5`}>
-        <ul>
+    <header class="kpc-masthead w-full px-4 pt-6 pb-4 sm:px-6 sm:pt-10">
+      <nav class={`kpc-brand-nav mx-auto flex max-w-5xl flex-col items-center justify-center gap-4 px-4 py-3 sm:px-5`}>
+        <ul class="kpc-brand-logo">
           <li>
             <a class="inline-flex items-center" href={`${webroot}/`} aria-label="ConvertX home">
               <img

@@ -185,3 +185,25 @@ main button[type="submit"] {
     max-height: 5rem;
   }
 }
+
+/* KPC compact stage v1 */
+.kpc-masthead { padding-block: clamp(1.5rem, 4vw, 3.5rem) 1rem; }
+.kpc-brand-nav { min-height: 0 !important; background: transparent !important; border: 0 !important; box-shadow: none !important; }
+.kpc-brand-logo { display: flex; width: 100%; justify-content: center; }
+.kpc-wordmark { position: static !important; display: block; width: min(88vw, 44rem); height: auto !important; max-height: 9rem; transform: none !important; }
+.kpc-nav-list { position: static; margin: .25rem 0 0; color: var(--kpc-gold); font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; }
+.kpc-login-stage, .kpc-converter-panel { position: relative; background: transparent !important; border: 0 !important; border-top: 1px solid rgba(211,173,89,.45) !important; border-radius: 0 !important; box-shadow: none !important; }
+.kpc-login-stage { width: min(100%, 29rem); margin: clamp(1.5rem, 5vw, 4rem) auto; padding-inline: clamp(.25rem, 2vw, 1.25rem) !important; }
+.kpc-login-heading, .kpc-page-title { margin-bottom: 2rem; text-align: center; font-size: clamp(1.25rem, 3vw, 2rem); }
+.kpc-login-form { gap: 1.5rem !important; }
+.kpc-dropzone { min-height: clamp(13rem, 28vw, 18rem); border-color: rgba(211,173,89,.7) !important; background: linear-gradient(135deg, rgba(211,173,89,.08), transparent 55%); }
+.kpc-dropzone span { color: var(--kpc-ivory); letter-spacing: .04em; }
+.kpc-dropzone b { color: var(--kpc-gold); }
+.kpc-search { border-bottom-color: var(--kpc-gold) !important; }
+.kpc-convert-submit { margin-top: .5rem; min-height: 3.25rem; }
+@media (max-width: 640px) {
+  .kpc-masthead { padding-top: 1.5rem; }
+  .kpc-wordmark { width: min(92vw, 30rem); max-height: 5.5rem; }
+  .kpc-nav-list { gap: .6rem 1rem; font-size: .68rem; }
+  .kpc-login-stage, .kpc-converter-panel { padding-inline: .25rem !important; }
+}

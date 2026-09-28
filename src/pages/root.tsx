@@ -116,11 +116,11 @@ export const root = new Elysia().use(userService).get(
           />
           <main
             class={`
-              w-full flex-1 px-2
+              w-full flex-1 px-2 kpc-converter-stage
               sm:px-4
             `}
           >
-            <article class="article">
+            <article class="article kpc-converter-panel">
               <h1 class="mb-4 text-xl kpc-page-title">ELEKTRISCHER DATEIEN-UMFORMER</h1>
               <div class="mb-4 scrollbar-thin max-h-[50vh] overflow-y-auto">
                 <table
@@ -136,14 +136,14 @@ export const root = new Elysia().use(userService).get(
               <div
                 id="dropzone"
                 class={`
-                  relative flex h-48 w-full items-center justify-center rounded-sm border
+                  kpc-dropzone relative flex h-48 w-full items-center justify-center rounded-sm border
                   border-dashed border-neutral-700 transition-all
                   hover:border-neutral-600
                   [&.dragover]:border-4 [&.dragover]:border-neutral-500
                 `}
               >
                 <span>
-                  <b>Choose a file</b> or drag it here
+                  <b>Datei auswählen</b> oder hierher ziehen
                 </span>
                 <input
                   type="file"
@@ -159,13 +159,13 @@ export const root = new Elysia().use(userService).get(
               class="relative mx-auto mb-[35vh] w-full max-w-4xl"
             >
               <input type="hidden" name="file_names" id="file_names" />
-              <article class="article w-full">
+              <article class="article kpc-converter-panel w-full">
                 <input
                   type="search"
                   name="convert_to_search"
                   placeholder="Datei-Formate durchsuchen"
                   autocomplete="off"
-                  class="w-full rounded-sm bg-neutral-800 p-4"
+                  class="kpc-search w-full rounded-sm bg-neutral-800 p-4"
                 />
                 <div class="select_container relative">
                   <article
@@ -227,7 +227,7 @@ export const root = new Elysia().use(userService).get(
               </article>
               <input
                 class={`
-                  w-full btn-primary opacity-100
+                  kpc-convert-submit w-full btn-primary opacity-100
                   disabled:cursor-not-allowed disabled:opacity-50
                 `}
                 type="submit"
