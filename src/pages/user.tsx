@@ -82,29 +82,29 @@ export const user = new Elysia()
   <img className="kpc-setup-wordmark" src="/kpc-consortium-wordmark.png" alt="Institut für Formatangelegenheiten" />
 </div>
 <h1 class="my-8 text-3xl" data-kpc-setup-title="true">Willkommen bei der Anmeldestelle</h1>
-          <article class="article p-0">
+          <article class="article p-0" data-kpc-setup-shell="v5">
             <header class="w-full bg-neutral-800 p-4">Konto einrichten</header>
-            <form method="post" action={`${WEBROOT}/register`} class="p-4 kpc-login-form">
+            <form method="post" action={`${WEBROOT}/register`} class="p-4 kpc-login-form" data-kpc-setup-form="v5">
         <h1 class="kpc-login-heading">ANMELDESTELLE</h1>
               <fieldset class="mb-4 flex flex-col gap-4">
                 <label class="flex flex-col gap-1">
-                  Email
+                  E-Mail-Adresse
                   <input
                     type="email"
                     name="email"
                     class="rounded-sm bg-neutral-800 p-3"
-                    placeholder="Email"
+                    placeholder="E-Mail-Adresse"
                     autocomplete="email"
                     required
                   />
                 </label>
                 <label class="flex flex-col gap-1">
-                  Password
+                  Passwort
                   <input
                     type="password"
                     name="password"
                     class="rounded-sm bg-neutral-800 p-3"
-                    placeholder="Password"
+                    placeholder="Passwort"
                     autocomplete="current-password"
                     required
                   />
@@ -120,9 +120,7 @@ export const user = new Elysia()
                   hover:text-accent-400
                 `}
                 href="https://github.com/C4illin/ConvertX"
-              >
-                GitHub
-              </a>
+              >Problem melden</a>
               .
             </footer>
           </article>
