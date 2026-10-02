@@ -85,7 +85,7 @@ export const user = new Elysia()
           <article class="article p-0" data-kpc-setup-shell="v5">
             <header class="w-full bg-neutral-800 p-4">Konto einrichten</header>
             <form method="post" action={`${WEBROOT}/register`} class="p-4 kpc-login-form" data-kpc-setup-form="v5">
-        <h1 class="kpc-login-heading">ANMELDESTELLE</h1>
+        <h1 class="kpc-login-heading" data-kpc-auth-title="v6">ANMELDESTELLE</h1>
               <fieldset class="mb-4 flex flex-col gap-4">
                 <label class="flex flex-col gap-1">
                   E-Mail-Adresse
@@ -271,7 +271,7 @@ export const user = new Elysia()
               `}
             >
               <article class="article kpc-login-stage">
-                <h1 class="kpc-login-heading">ANMELDESTELLE</h1>
+                <h1 class="kpc-login-heading" data-kpc-auth-title="v6">ANMELDESTELLE</h1>
                 <form method="post" class="kpc-login-form flex flex-col gap-4">
                   <fieldset class="mb-4 flex flex-col gap-4">
                     <label class="flex flex-col gap-1">

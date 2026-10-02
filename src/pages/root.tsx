@@ -119,7 +119,7 @@ export const root = new Elysia().use(userService).get(
               w-full flex-1 px-2 kpc-converter-stage
               sm:px-4
             `}
-          >
+           data-kpc-ornamental-converter="v6">
             <article class="article kpc-converter-panel">
               <h1 class="mb-4 text-xl kpc-page-title">ELEKTRISCHER DATEIEN-UMFORMER</h1>
               <div class="mb-4 scrollbar-thin max-h-[50vh] overflow-y-auto">

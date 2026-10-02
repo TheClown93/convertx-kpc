@@ -67,7 +67,7 @@ export const Header = ({
   }
 
   return (
-    <header class="kpc-masthead w-full px-4 pt-6 pb-4 sm:px-6 sm:pt-10">
+    <header class="kpc-masthead w-full px-4 pt-6 pb-4 sm:px-6 sm:pt-10" data-kpc-ornamental-header="v6">
       <nav class={`kpc-brand-nav mx-auto flex max-w-5xl flex-col items-center justify-center gap-4 px-4 py-3 sm:px-5`}>
         <ul class="kpc-brand-logo">
           <li>

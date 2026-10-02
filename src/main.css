@@ -329,3 +329,20 @@ main button[type="submit"] {
     padding: 1.15rem;
   }
 }
+/* KPC_ORNAMENTAL_TITLE_ANCHOR_V6 */
+body:has([data-kpc-auth-title="v6"]), body:has([data-kpc-ornamental-converter="v6"]) { background: radial-gradient(circle at 50% 0%, #1b1609 0, #090909 42rem, #050505 100%); color: #f1e8ce; }
+header[data-kpc-ornamental-header="v6"] { display: grid; justify-items: center; gap: 1rem; min-height: 15rem; padding: 2rem 1.25rem 1.5rem; background: transparent !important; border: 0 !important; box-shadow: none !important; }
+header[data-kpc-ornamental-header="v6"]::before { content: ""; display: block; width: min(44rem, 92vw); height: 8rem; background: url("/kpc-consortium-wordmark.png") center/contain no-repeat; }
+header[data-kpc-ornamental-header="v6"]::after { content: "✦  ─────────────────────────  ✦"; color: #d6b65c; letter-spacing: .38em; font-size: .72rem; white-space: nowrap; }
+header[data-kpc-ornamental-header="v6"] nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.15rem; }
+header[data-kpc-ornamental-header="v6"] nav a, header[data-kpc-ornamental-header="v6"] nav button { color: #e5c96f !important; background: transparent !important; border-color: #806528 !important; letter-spacing: .12em; text-transform: uppercase; }
+body:has([data-kpc-auth-title="v6"]) [data-kpc-auth-title="v6"] { color: #e5c96f; font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.5rem, 4vw, 2.65rem); letter-spacing: .24em; text-align: center; text-transform: uppercase; }
+body:has([data-kpc-auth-title="v6"]) form { width: min(42rem, calc(100vw - 2rem)); margin: 2.5rem auto; padding: clamp(1.4rem, 4vw, 3rem); background: linear-gradient(145deg, #15120d, #080808); border: 1px solid #9b792b; outline: 1px solid rgba(226,195,108,.28); outline-offset: .45rem; box-shadow: 0 1.2rem 4rem rgba(0,0,0,.6); }
+body:has([data-kpc-auth-title="v6"]) label { color: #ead79d; font-family: Georgia, "Times New Roman", serif; letter-spacing: .08em; }
+body:has([data-kpc-auth-title="v6"]) input, [data-kpc-ornamental-converter="v6"] input { color: #f4ead1 !important; background: #0a0a09 !important; border: 0 !important; border-bottom: 1px solid #9b792b !important; border-radius: 0 !important; }
+body:has([data-kpc-auth-title="v6"]) button, [data-kpc-ornamental-converter="v6"] button { color: #181207 !important; background: linear-gradient(90deg, #a77d24, #e3c46b, #a77d24) !important; border: 1px solid #f2d884 !important; border-radius: 0 !important; font-family: Georgia, "Times New Roman", serif; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+[data-kpc-ornamental-converter="v6"] { width: min(76rem, calc(100vw - 2rem)); margin-inline: auto; }
+[data-kpc-ornamental-converter="v6"] h1 { color: #e5c96f; font-family: Georgia, "Times New Roman", serif; letter-spacing: .18em; text-align: center; text-transform: uppercase; }
+[data-kpc-ornamental-converter="v6"] > * { border-color: rgba(214,182,92,.55); }
+body:has([data-kpc-auth-title="v6"]) footer, body:has([data-kpc-ornamental-converter="v6"]) footer { border-top: 1px solid #d6b65c; color: #e5c96f; }
+@media (max-width: 390px) { header[data-kpc-ornamental-header="v6"] { min-height: 10.5rem; padding-top: 1.25rem; } header[data-kpc-ornamental-header="v6"]::before { height: 5.5rem; } header[data-kpc-ornamental-header="v6"]::after { letter-spacing: .17em; } body:has([data-kpc-auth-title="v6"]) form { width: calc(100vw - 1.5rem); padding: 1.25rem; outline-offset: .25rem; } }
